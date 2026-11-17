@@ -1,11 +1,10 @@
-/**
- * Representa un pedido realizado en CamisFut
- */
+import { DetallePedido } from './detalle-pedido';
 
 export interface Pedido {
   id: number;
-  usuario: number;
+  idUsuario: number;
   fecha: string;
   total: number;
   estado: string;
+  detalles: DetallePedido[];
 }
